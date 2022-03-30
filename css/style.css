@@ -1,0 +1,29 @@
+
+
+body{
+  background-color:#ccffff;
+}
+.container{
+  margin: auto;
+  width: 1024px;
+  background-color:#66ccff;
+  box-shadow: 30px 10px 20px #003380;
+}
+
+aside{
+  margin-top: 60px;
+  float: right;
+  width: 300px;
+  position: sticky;
+  top: 25px;
+  right: 200px;
+  border-radius:20px;
+  background-color: 	#3385ff;
+  box-shadow: -5px -5px 5px #aaa;
+}
+
+
+
+
+
+

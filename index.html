@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <title>Sistemas Dinámicos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/ocultarRespuesta.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1 align="center">Sistemas Dinámicos</h1>
+      </header>
+      <h2>¿Que es un Sistema Dinámico?</h2>
+      <p>Un sistema Dinámico es aquel que cambia en función al tiempo</p>
+      <h3>Tipos de Sistemas Dinámicos</h3>
+      <ul>
+        <li><strong>Malla Abierta</strong></li>
+        <p>Su señal de salida no es comparada con su señal de entrada</p>
+        <div class="" align="center">
+          <img
+            src="Images/malla abierta.png"
+            alt="malla abierta"
+            width="600"
+            height="400"
+          />
+        </div>
+        <li><strong>Malla Cerrada</strong></li>
+        <p>
+          Sufre cambios a partir de sus entradas que varían con el tiempo y
+          surgen nuevas salidas retroalimentadas
+        </p>
+        <div class="" align="center">
+          <img
+            src="Images/malla cerrada.png"
+            alt="malla cerrada"
+            width="600"
+            height="400"
+          />
+        </div>
+      </ul>
+
+      <h2>
+        Clases de sistemas dinámicos según el número de entradas y salidas
+      </h2>
+      <ul>
+        <li><strong>SISO - (Single Input, Single Output)</strong></li>
+        <p>
+          Es aquel sistema, en el cual recibe una señal como valor de entrada,
+          pasa por uno o varios procesos y genera una sola salida
+        </p>
+        <div class="" align="center">
+          <img src="Images/siso.png" alt="SISO" width="400" height="300" />
+        </div>
+        <li><strong>MISO - (Multiple Input, Single Output)</strong></li>
+        <p>
+          Es aquel sistema, en el cual recibe varias señales como valores de
+          entrada, pasa por uno o varios procesos y genera una sola salida
+        </p>
+        <div class="" align="center">
+          <img src="Images/miso.png" alt="MISO" width="400" height="300" />
+        </div>
+        <li><strong>MIMO - (Multiple Input, Multiple Output)</strong></li>
+        <p>
+          Es aquel sistema, en el cual recibe varias señales como valores de
+          entrada, pasa por uno o varios procesos y genera varias salidas
+        </p>
+        <div class="" align="center">
+          <img src="Images/mimo.png" alt="MIMO" width="400" height="300" />
+        </div>
+        <li><strong>SIMO - (Single Input, Multiple Output)</strong></li>
+        <p>
+          Es aquel sistema, en el cual recibe una señal como valor de entrada,
+          pasa por uno o varios procesos y genera varias salidas
+        </p>
+        <div class="" align="center">
+          <img src="Images/simo.png" alt="SIMO" width="400" height="300" />
+        </div>
+      </ul>
+
+      <h2>Diagramas de bloques</h2>
+      <div class="" align="center">
+        <img
+          src="Images/diagrama de bloques.png"
+          alt="Diagrama de bloques"
+          width="500"
+          height="200"
+        />
+      </div>
+      <h2>Elementos de un diagrama de bloque</h2>
+      <ul>
+        <li><strong>Señales</strong></li>
+        <p>Flechas que componen el diagrama</p>
+        <div class="" align="center">
+          <img
+            src="Images/señales.png"
+            alt="Señales"
+            width="300"
+            height="350"
+          />
+        </div>
+        <li><strong>Bloques</strong></li>
+        <p>
+          Representan una función de transferencia de una estructura de control
+        </p>
+        <div class="" align="center">
+          <img
+            src="Images/Bloques.png"
+            alt="bloques"
+            width="300"
+            height="300"
+          />
+        </div>
+        <li><strong>Punto de suma</strong></li>
+        <p>
+          Es representado como un circulo que indica una operación de suma o
+          resta
+        </p>
+        <div class="" align="center">
+          <img
+            src="Images/Punto de suma.png"
+            alt="punto de suma"
+            width="300"
+            height="200"
+          />
+        </div>
+        <li><strong>Bifurcación</strong></li>
+        <p>
+          Es un punto en el cual, la señal proveniente de algún bloque puede
+          tomar paralelamente diferentes caminos para llegar a otros bloques
+        </p>
+        <div class="" align="center">
+          <img
+            src="Images/Bifurcaciones.png"
+            alt="bifurcaciones"
+            width="400"
+            height="300"
+          />
+        </div>
+      </ul>
+
+      <div class="" align="center">
+        <h2>Ejemplo</h2>
+      </div>
+
+      <div class="" align="center">
+        <iframe
+          width="800"
+          height="450"
+          src="https://www.powtoon.com/embed/cs2GtBjpP0q/"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <br />
+
+      <h1>Actividad para afianzar lo aprendido</h1>
+      <img
+        src="Images/Ejercicio.jpg"
+        alt="Ejercicio en clase"
+        width="100%"
+        height="250"
+      />
+
+      <h2>
+        Despeje la siguiente ecuacion y realice su respectivo diagrama de bloques.
+      </h2>
+      <img src="Images/ecuacion.png" alt="Ecuacion" width="400" />
+
+      <br />
+      <br />
+      <button id="btn" type="button">Mostrar Respuesta</button>
+      <button id="btn1" type="button">Ocultar Respuesta</button>
+      <div id="respuesta">
+        <ol>
+          <br />
+          <li>
+            <strong
+              >Despejar la derivada de mayor grado que en este caso es
+            </strong>
+          </li>
+          <img src="Images/ecuacion2.png" alt="Ecuacion2" width="400" />
+          <br />
+          <br />
+          <img src="Images/ecuacion3.png" alt="Solucion" width="400" />
+          <br />
+          <br />
+          <li>
+            <strong
+              >Procedemos a dibujar el diagrama de bloques en base a la ecuación
+              despejada previamente.</strong
+            >
+          </li>
+          <br />
+          <img src="Images/diagrama.png" alt="Diagrama de bloques" />
+        </ol>
+      </div>
+
+      <div class="" align="center">
+        <p>Presentado por:</p>
+        <p>
+          - Jose ahumada <br />
+          - Yanvier Tamara
+        </p>
+        <p>Ing. de sistemas</p>
+      </div>
+    </section>
+  </body>
+</html>
